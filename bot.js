@@ -61,6 +61,14 @@ client2.on('message', message => {
 
 
 
+client3.on('message', message => {
+    if(message.content === '-راتب'){
+        message.channel.send('#daily')
+    }
+});
+
+
+
 client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
 if (message.content === '-spam') {
       let count = 0;
