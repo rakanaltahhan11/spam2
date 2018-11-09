@@ -31,7 +31,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === '-مبلغ'){
-        message.channel.send('#credits')
+        message.channel.send('#credit <@460606140666085378> 500')
     }
 });
 
@@ -47,26 +47,37 @@ client2.on('message', message => {
     }
 });
 
-client2.on('message', message => {
-    if(message.content === '-مبلغ'){
-        message.channel.send('#credits')
-    }
+
+
+
+
+client.on("message", message => {
+  if (message.author.id != "460606140666085378") return;
+  if (message.content.split(' ')[0] == '-say') {
+    message.delete();
+    message.channel.sendMessage(message.content.substr(5));
+  }
 });
 
-client2.on('message', message => {
-    if(message.content === '-ريب'){
-        message.channel.send('#credits')
-    }
+
+
+client2.on("message", message => {
+  if (message.author.id != "460606140666085378") return;
+  if (message.content.split(' ')[0] == '-say') {
+    message.delete();
+    message.channel.sendMessage(message.content.substr(5));
+  }
 });
 
 
 
-client3.on('message', message => {
-    if(message.content === '-راتب'){
-        message.channel.send('#daily')
-    }
+client3.on("message", message => {
+  if (message.author.id != "438862789302419464") return;
+  if (message.content.split(' ')[0] == '1say') {
+    message.delete();
+    message.channel.sendMessage(message.content.substr(5));
+  }
 });
-
 
 
 client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
