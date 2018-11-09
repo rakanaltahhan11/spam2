@@ -16,6 +16,13 @@ client.on('ready', () => {
 
 
 client.on('message', message => {
+    if(message.content === '-جيب'){
+        message.channel.send('#rep @wxy#4800')
+    }
+});
+
+
+client.on('message', message => {
     if(message.content === '-راتب'){
         message.channel.send('#daily')
     }
