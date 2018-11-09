@@ -53,7 +53,7 @@ client2.on('message', message => {
 
 
 
-client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
+client2.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
 if (message.content === '!spam') {
       let count = 0;
       let ecount = 0;
