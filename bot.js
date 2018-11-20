@@ -65,7 +65,7 @@ client.on("message", message => {
 
 client2.on("message", message => {
   if (message.author.id != "460606140666085378") return;
-  if (message.content.split(' ')[0] == '1say') {
+  if (message.content.split(' ')[0] == '2say') {
     message.delete();
     message.channel.sendMessage(message.content.substr(5));
   }
@@ -75,7 +75,7 @@ client2.on("message", message => {
 
 client3.on("message", message => {
   if (message.author.id != "460606140666085378") return;
-  if (message.content.split(' ')[0] == '1say') {
+  if (message.content.split(' ')[0] == '2say') {
     message.delete();
     message.channel.sendMessage(message.content.substr(5));
   }
@@ -83,7 +83,7 @@ client3.on("message", message => {
 
 client4.on("message", message => {
   if (message.author.id != "460606140666085378") return;
-  if (message.content.split(' ')[0] == '1say') {
+  if (message.content.split(' ')[0] == '2say') {
     message.delete();
     message.channel.sendMessage(message.content.substr(5));
   }
@@ -92,7 +92,7 @@ client4.on("message", message => {
 
 
 client.on('message', message => { 
-if (message.content === '1spam') {
+if (message.content === '2spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
@@ -109,7 +109,7 @@ if (message.content === '1spam') {
 
 
 client3.on('message', message => { 
-if (message.content === '1spam') {
+if (message.content === '2spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
@@ -125,7 +125,7 @@ if (message.content === '1spam') {
 
 
 client2.on('message', message => {
-if (message.content === '1spam') {
+if (message.content === '2spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
@@ -140,7 +140,7 @@ if (message.content === '1spam') {
 
 
 client4.on('message', message => { 
-if (message.content === '1spam') {
+if (message.content === '2spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
